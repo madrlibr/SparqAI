@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Sparq</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f9f9fb;
+      --text-color: #1a1a1a;
+      --muted-color: #555;
+      --card-bg: #ffffff;
+      --accent-color: #0066ff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0e0e10;
+        --text-color: #f2f2f2;
+        --muted-color: #aaa;
+        --card-bg: #18181b;
+        --accent-color: #4f9cff;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      padding: 2rem 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: var(--muted-color);
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2.2rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0.8rem;
+      color: var(--text-color);
+    }
+
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--muted-color);
+      color: var(--muted-color);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='img1.png') }}" alt="Sparq Logo">
+    </div>
+
+    <h1>About Sparq</h1>
+    <div class="subtitle">A lightweight, intelligent chat platform powered by Gemini 2.0 Flash</div>
+
+    <p><strong>Sparq</strong> adalah proyek web independen yang dirancang untuk menghadirkan pengalaman percakapan AI yang cepat, interaktif, dan bersih secara visual. Seluruh sistem dibangun dengan pendekatan ringan menggunakan Flask di sisi backend, serta HTML, CSS, dan JavaScript di sisi frontend.</p>
+    <h2>Teknologi yang Digunakan</h2>
+    <p>Sparq dijalankan menggunakan:</p>
+    <ul>
+      <li>Flask (Python) untuk backend</li>
+      <li>Gemini 2.0 Flash sebagai model AI utama</li>
+      <li>Streaming API untuk respons real-time</li>
+      <li>MathJax, Markdown, dan syntax highlight untuk tampilan hasil AI</li>
+      <li>Dark/Light mode yang adaptif terhadap sistem pengguna</li>
+    </ul>
+
+    <h2>Filosofi Proyek</h2>
+    <p>Proyek ini dibangun bukan untuk sekadar meniru platform besar, tapi sebagai bukti bahwa pengembang individu juga bisa menciptakan sistem yang elegan dan efisien. Sparq dirancang agar mudah dipelajari, bisa dikembangkan ulang, dan tetap transparan dalam cara ia beroperasi.</p>
+
+    <p>Tidak ada ambisi komersial besar di balik proyek ini. Sparq hadir sebagai bentuk eksplorasi pribadi, tapi tetap terbuka untuk dikembangkan bersama komunitas yang punya semangat belajar dan ingin memahami AI lebih dalam.</p>
+
+    <h2>Kontak</h2>
+    <p>Jika Anda ingin memberikan masukan, laporan bug, atau sekadar berdiskusi tentang pengembangan AI, silakan kirim email ke:</p>
+    <p><a href="mailto:hi.sparq@gmail.com">hi.sparq@gmail.com</a></p>
+
+    <div class="footer">© 2025 Sparq. All rights reserved.</div>
+  </div>
+</body>
+</html>

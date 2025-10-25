@@ -1,0 +1,19 @@
+# File Konfigurasi Sensitif (PENTING!)
+.env
+
+# Direktori yang Dibuat Python
+__pycache__/
+.pytest_cache/
+
+# File Dependencies
+venv/
+*.egg-info/
+dist/
+
+# File Log atau DB Lokal
+*.log
+db.sqlite3
+
+# Folder dan Database Lokal Flask
+instance/
+*.db
